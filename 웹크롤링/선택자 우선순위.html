@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 선택자 정리:
+        1. 전체선택자(*): html파일 내 존재하는 모든 태그에 적용하겠자
+        2. 태그선택자(<h1~h6>, <p>등): 특정 태그에게 이름을 통해서 적용하겠다
+        3. 클래스(.), 아이디(#): 전체, 태그 선택자로만 css를 주면 홈페이지가 너무 단순해짐
+                               클래스 -> 중복 가능하다, 아이디 -> 고유한 값이어야 한다
+        우선순위: * → <> → . → #
+        */
+        *{
+            color: blue;
+        }
+        h1, h2{
+            color: blueviolet;
+        }
+        .EST{
+            color: pink;
+        }
+        #BM{
+            color: red;
+        }
+        .girl{
+            color: blueviolet;
+        }
+        #YG{
+            font-family: "궁서체";
+        }
+    </style>
+</head>
+<body>
+    <h1 class = "EST">이스트캠프</h1>
+    <h1 class = "EST", id = "BM">임보미</h1>
+    <h2>정봉균</h2>
+    <!-- 우리반의 소녀들을 컨텐츠로 만들어보기 -->
+    <!-- 클래스 girl : 보라색, 오예지의 id를 지정해서 궁서체로 바꿔보자 -->
+    <h3 class = "girl">신민경</h3>
+    <h3 class = "girl", id = "YG">오예지</h3>
+</body>
+</html>

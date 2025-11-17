@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul > li{
+            color: blue;
+        }
+        ol > li{
+            color: red;
+        }
+        ul > li > span{
+            color: yellow;
+        }
+        ol > li > span{
+            color: yellow;
+        }
+
+        h1 + p{
+            color: aquamarine;
+        }
+
+        h1 + p + p {
+            color: brown;
+        }
+
+        ol > li~li{
+            font-family: '궁서체';
+        }
+    </style>
+</head>
+
+<body>
+    <h1>여긴 H1태그</h1>
+    <p>여긴 P태그1</p>
+    <p>여긴 P태그2</p>
+
+    <ul>
+        <li>li태그1</li>
+        <li>li태그2</li>
+        <li>
+            <span>span태그입니다.</span>
+        </li>
+    </ul>
+    <ol>
+        <li>li태그3</li>
+        <li>li태그4</li>
+        <li>
+            <span>span태그입니다.</span>
+        </li>
+    </ol>
+</body>
+
+</html>
